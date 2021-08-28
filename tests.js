@@ -1,7 +1,7 @@
 const tests = [{
 	name: "Минск",
 	description: "О Беларуси очень мало известно даже ближайшим соседям.А люди из стран подальше часто интересуются, где она находится, и является ли Беларусь вообще страной.",
-	picture: "https://magazine.startus.cc/wp-content/uploads/2018/03/minsk-1.jpg",
+	picture: "./img/minsk.jpg",
 	time: 1000 * 60,
 	questions: [{
 		text: "1. На какой реке располагается город Минск?",
@@ -32,7 +32,7 @@ const tests = [{
 }, {
 	name: "Физика",
 	description: "Большинству из нас школьные предметы давались не так просто, как хотелось бы.Сейчас даже отличники не помнят многое из школьной программы. Почему? Мы редко применяем школьные знания во взрослой жизни.",
-	picture: "https://ki.ill.in.ua/m/670x450/24483745.jpg",
+	picture: "./img/physics.jpg",
 	time: 1000 * 100,
 	questions: [{
 		text: "1. Какой термометр появился раньше?",
@@ -59,7 +59,7 @@ const tests = [{
 	name: "Гигиена",
 	description: "Медицинская наука, изучающая влияние факторов внешней среды на организм человека с целью оптимизации благоприятных и профилактики неблагоприятных воздействий.",
 	time: 1000 * 50,
-	picture: "https://lh3.googleusercontent.com/proxy/Vhnqn2xg5kU_Avu3nENdDH9SbGgHRAn-IjS1ZpUkvqRcak5_CAbYI2SNPMbkyT9gGoRLZZ6Jvxe1RCx4EjLC03EL65upISKe",
+	picture: "./img/hygiene.jpg",
 	questions: [{
 		text: "1.Гигиена питания (определение)",
 		rightans: [1],
@@ -108,7 +108,7 @@ function renderDescription(testName, testsConteiner) {
    <div class="container">
       <h1 class="test">${selectedTest.name}</h1>
       <div class="imtext">
-         <div>
+         <div class="image_container">
             <img src="${selectedTest.picture}">
          </div>
          <div>
